@@ -158,26 +158,29 @@ export default function Navbar() {
 						<div
 							style={{
 								width: 18,
-								height: 14,
-								position: "relative",
+								height: 12,
+								margin: "4px",
 								display: "flex",
 								flexDirection: "column",
 								justifyContent: "space-between",
 							}}
 						>
+							{/* Top Bar */}
 							<span
 								style={{
 									display: "block",
 									height: "1.5px",
 									background: "currentColor",
 									borderRadius: 2,
-									transformOrigin: "left center",
+									transformOrigin: "center",
 									transition: "transform .25s ease, opacity .2s",
 									transform: menuOpen
-										? "rotate(38deg) translateY(-1px)"
+										? "rotate(45deg) translate(4px, 3px)"
 										: "none",
 								}}
 							/>
+
+							{/* Middle Bar */}
 							<span
 								style={{
 									display: "block",
@@ -188,16 +191,18 @@ export default function Navbar() {
 									opacity: menuOpen ? 0 : 1,
 								}}
 							/>
+
+							{/* Bottom Bar */}
 							<span
 								style={{
 									display: "block",
 									height: "1.5px",
 									background: "currentColor",
 									borderRadius: 2,
-									transformOrigin: "left center",
+									transformOrigin: "center",
 									transition: "transform .25s ease, opacity .2s",
 									transform: menuOpen
-										? "rotate(-38deg) translateY(1px)"
+										? "rotate(-45deg) translate(4px, -3px)"
 										: "none",
 								}}
 							/>
