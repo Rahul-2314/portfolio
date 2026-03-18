@@ -131,6 +131,7 @@ export default function Navbar() {
 						target="_blank"
 						rel="noreferrer"
 						className="btn btn-outline nav-resume"
+						download="Rahul_Chowdhury_Resume.pdf"
 						style={{ padding: "7px 16px", fontSize: "0.67rem", flexShrink: 0 }}
 					>
 						<DownloadIcon size={11} /> Resume
