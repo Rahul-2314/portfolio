@@ -22,9 +22,12 @@ function ContactForm() {
 		setSending(true);
 		setStatus(null);
 		try {
-			const res = await fetch("/api/contact", {
+			const res = await fetch("https://formspree.io/f/xdawwyyv", {
 				method: "POST",
-				headers: { "Content-Type": "application/json" },
+				headers: {
+					"Content-Type": "application/json",
+					Accept: "application/json",
+				},
 				body: JSON.stringify(fields),
 			});
 			if (res.ok) {
